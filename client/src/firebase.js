@@ -1,19 +1,21 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyD3nKKOslI0-18W1ZyAcpMPkjqgcRTbCf4",
-    authDomain: "twitter-clone-a0e48.firebaseapp.com",
-    projectId: "twitter-clone-a0e48",
-    storageBucket: "twitter-clone-a0e48.appspot.com",
-    messagingSenderId: "253769623904",
-    appId: "1:253769623904:web:79a709708d07ae89885605"
+  apiKey: "AIzaSyAbq-3zIntJCb7K-M44o1_kwhjtwWntoSU",
+  authDomain: "tclone-4c347.firebaseapp.com",
+  projectId: "tclone-4c347",
+  storageBucket: "tclone-4c347.appspot.com",
+  messagingSenderId: "47707029159",
+  appId: "1:47707029159:web:5f26e4d370730152e8a582",
+  measurementId: "G-1ZG0PJ60GC"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-export default app;
+const analytics = getAnalytics(app);
