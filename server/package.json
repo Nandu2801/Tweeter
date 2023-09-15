@@ -8,7 +8,7 @@
   "start": "nodemon index.js",
   "client": "cd client && npm start",
   "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon index.js\" \"npm run client\"",
-  "predeploy": "cd client && npm ci && npm run build"
+  
  
 },
   "keywords": [],
